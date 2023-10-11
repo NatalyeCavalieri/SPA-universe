@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPA UNIVERSE</title>
+  <link rel="stylesheet" href="./style.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  /* Estilos de fundo para cada link */
+  .home-bg {
+    background-image: url(./assets/mountains-universe-1.svg);
+  }
+
+  .universe-bg {
+    background-image: url(./assets/mountains-universe-3.svg);
+  }
+
+  .exploration-bg {
+    background-image: url(./assets/mountains-universe02.svg);
+  }
+</style>
+</head>
+<body>
+  <div id="content">
+  <nav>
+    <ul>
+      <img src="./assets/Vector.svg" alt="">
+    <li><a href="/" id="home-bg" onclick="route()">Home</a></li>
+    <li><a href="/universe" id="universe-bg" onclick="route()">O Universo</a></li>
+    <li><a href="/exploration" id="exploration-bg" onclick="route()">Exploração</a></li>
+  </ul>
+  </nav>
+</div>
+
+
+  <div id="app">
+
+  </div>
+  <script src="./js/index.js" type="module"></script>
+</body>
+</html>
