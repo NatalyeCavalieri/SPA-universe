@@ -1,9 +1,14 @@
 export class Router {
+  constructor() {
 
-  routes = {}
+  this.routes = {};
+  this.pageBg = {};
+  }
 
-  add(routeName, page){
+
+  add(routeName, page, bgImage){
     this.routes[routeName] = page
+    this.pageBg[routeName] = bgImage
 
   }
 
@@ -24,7 +29,7 @@ export class Router {
     .then(data => data.text())
     .then(html => {
       document.querySelector('#app').innerHTML = html
-      document.getElementById
+      document.body.style.backgroundImage = this.pageBg[pathname]
     })
   }
   
